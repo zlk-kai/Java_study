@@ -15,21 +15,15 @@ public class LinkedList01 {
         Node first = jack;
         Node last = laohan;
 
-        while (true){
-            if (first == null){
-                break;
-            }else
-            //输出first信息
+        //输出first信息
+        while (first != null) {
             System.out.println(first);
             first = first.next;
         }
 
-        while (true){
-            if (last == null){
-                break;
-            }else
-                //输出first信息
-                System.out.println(last);
+        //输出first信息
+        while (last != null) {
+            System.out.println(last);
             last = last.pre;
         }
     }
@@ -42,7 +36,6 @@ class Node{
     public Node(Object item){
         this.item = item;
     }
-
     public String toString() {
         return "Node name = " +item;
     }
